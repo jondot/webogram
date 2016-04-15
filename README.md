@@ -1,7 +1,10 @@
 # Webogram
 
 Snap web pages through Instagram inspired filters. You can use this to generate wallpapers for
-phone and desktop, icons, and [book covers](leanpub.com/the-little-metrics-book).
+phone and desktop, icons, and [book covers](http://leanpub.com/the-little-metrics-book):
+
+![](https://s3.amazonaws.com/titlepages.leanpub.com/the-little-metrics-book/large?1459801456)
+
  
 
 
