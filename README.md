@@ -19,7 +19,7 @@ $ npm install webogram -g
 Then, pick a page to snap, [D3 visualizations](bl.ocks.org) are always amazing:
 
 ```
-webogram http://bl.ocks.org/mbostock/raw/1893974/ -s 4000x4000 -z 5.0 -c 30x30x1000x1000 -p
+webogram http://bl.ocks.org/mbostock/raw/b07f8ae91c5e9e45719c/ -d 50 -s 4000x4000 -z 3.0 -c 30x30x2000x2000 -f lomo -p
 ```
 
 Enjoy the results:
