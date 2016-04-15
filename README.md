@@ -1,6 +1,8 @@
 # Webogram
 
-Snap web pages through Instagram inspired filters.
+Snap web pages through Instagram inspired filters. You can use this to generate wallpapers for
+phone and desktop, icons, and [book covers](leanpub.com/the-little-metrics-book).
+ 
 
 
 ## Quick start
