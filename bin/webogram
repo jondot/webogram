@@ -35,7 +35,7 @@ var outfile = argv.out
 var clip = argv.clip || `0x0x${argv.size}`
 
 var childArgs = [
-  path.join(__dirname, 'driver.js'),
+  path.join(__dirname, '../driver.js'),
   argv._[0],
   outfile,
   argv.size,
