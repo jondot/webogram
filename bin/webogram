@@ -3,20 +3,25 @@
 var filters = ["vintage", "lomo", "clarity", "sinCity", "sunrise", "crossProcess", "orangePeel", "love", "grungy", "jarques", "pinhole", "oldBoot", "glowingSun", "hazyDays", "herMajesty", "nostalgia", "hemingway", "concentrate"]
 
 var argv = require('yargs')
+              .usage('Usage: $0 <url> [options]')
               .demand(1)
               .alias('s', 'size')
+              .describe('s', 'size of image: WIDTHxHEIGHT, 400x300')
               .alias('d', 'delay')
+              .describe('d', 'delay before snapping')
               .alias('o', 'out')
+              .describe('o', 'out filename')
               .alias('z', 'zoom')
-              .alias('c', 'clip')
+              .describe('z', 'zoom factor to apply')
+              .alias('c', 'crop')
+              .describe('c', 'crop region: TOPxLEFTxWIDTHxHEIGHT, 10x20x500x500')
               .alias('p', 'preview')
+              .describe('p', 'preview the image?')
               .option('filter', {
                 alias: 'f',
                 describe: 'choose a filter',
                 choices: filters
               })
-              .alias('f', 'filter')
-              .describe('s', 'Size of image')
               .default({s: '512x512', d: 200, out: 'out.png', zoom: 1.0, preview:false})
               .argv
 
@@ -32,7 +37,7 @@ var path = require('path')
 var childProcess = require('child_process')
 
 var outfile = argv.out
-var clip = argv.clip || `0x0x${argv.size}`
+var crop = argv.crop || `0x0x${argv.size}`
 
 var childArgs = [
   path.join(__dirname, '../driver.js'),
@@ -41,7 +46,7 @@ var childArgs = [
   argv.size,
   argv.delay,
   argv.zoom,
-  clip
+  crop
 ]
 
 var symbols = {
