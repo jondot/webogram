@@ -1,11 +1,11 @@
 # Webogram
 
-Snap web pages through Instagram inspired filters. You can use this to generate wallpapers for
-phone and desktop, icons, and [book covers](http://leanpub.com/the-little-metrics-book):
+Snap your web pages through Instagram inspired filters. You can use this to generate wallpapers for
+phone and desktop, icons, and [book covers](http://leanpub.com/the-little-metrics-book) like
+this one:
 
 ![](https://s3.amazonaws.com/titlepages.leanpub.com/the-little-metrics-book/large?1459801456)
 
- 
 
 
 ## Quick start
@@ -16,15 +16,11 @@ Install webogram with `npm` (requires Node.js):
 $ npm install webogram -g
 ```
 
-Then, pick a page to snap, [D3 visualizations](bl.ocks.org) are always amazing:
+Then use one of your visualizations or web pages (D3 visualizations are amazing to render):
 
 ```
-webogram http://bl.ocks.org/mbostock/raw/b07f8ae91c5e9e45719c/ -d 50 -s 4000x4000 -z 3.0 -c 30x30x2000x2000 -f lomo -p
+webogram http://bl.ocks.org/your-visualization-id -d 50 -s 4000x4000 -z 3.0 -c 30x30x2000x2000 -f lomo -p
 ```
-
-Enjoy the results:
-
-![](sample.png)
 
 
 ## Options
