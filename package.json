@@ -1,6 +1,6 @@
 {
   "name": "webogram",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Snap any web page through an Instagram inspired filter",
   "bin":"./bin/webogram",
   "dependencies": {
