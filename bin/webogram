@@ -17,12 +17,14 @@ var argv = require('yargs')
               .describe('c', 'crop region: TOPxLEFTxWIDTHxHEIGHT, 10x20x500x500')
               .alias('p', 'preview')
               .describe('p', 'preview the image?')
+              .alias('r', 'retina')
+              .describe('r', 'retina factor (for now, 1 or 2)')
               .option('filter', {
                 alias: 'f',
                 describe: 'choose a filter',
                 choices: filters
               })
-              .default({s: '512x512', d: 200, out: 'out.png', zoom: 1.0, preview:false})
+              .default({s: '512x512', d: 200, out: 'out.png', zoom: 1.0, preview:false, retina: 2})
               .argv
 
 var caman = require('caman').Caman
@@ -46,7 +48,8 @@ var childArgs = [
   argv.size,
   argv.delay,
   argv.zoom,
-  crop
+  crop,
+  argv.retina //retinafactor
 ]
 
 var symbols = {
