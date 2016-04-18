@@ -16,11 +16,26 @@ Install webogram with `npm` (requires Node.js):
 $ npm install webogram -g
 ```
 
-Then use one of your visualizations or web pages (D3 visualizations are amazing to render):
+Then use one of your visualizations or web pages (D3 visualizations are amazing to render), here's
+one of mine:
 
 ```
-webogram http://bl.ocks.org/your-visualization-id -d 50 -s 4000x4000 -z 3.0 -c 30x30x2000x2000 -f lomo -p
+webogram https://bl.ocks.org/jondot/raw/b32e72ecad555658d2cb1ca517e3bcb7/ -s 1000x1000 -f lomo -p
 ```
+
+
+Original:
+
+![](normal.png)
+
+Lomo:
+
+![](lomo.png)
+
+
+Vintage:
+
+![](vintage.png)
 
 
 ## Options
